@@ -7,27 +7,27 @@ import org.junit.jupiter.api.Test;
 
 public class Day1Test {
 
-  private static final int[] PUZZLE_INPUT = Input.PUZZLE.loadInts();
+  private static final String[] PUZZLE_INPUT = Input.PUZZLE.loadStrings();
 
-  private static final int[] TEST_INPUT = Input.TEST.loadInts();
+  private static final String[] TEST_INPUT = Input.TEST.loadStrings();
 
   @Test
-  void testGetIncCount_testInput() {
-    assertThat(Day1.getIncCount(TEST_INPUT), is(7));
+  void testGetMostCals_testInput() {
+    assertThat(Day1.getMostCals(TEST_INPUT, 1), is(24000));
+  }
+  
+  @Test
+  void testGetMostCals_puzzleInput() {
+    assertThat(Day1.getMostCals(PUZZLE_INPUT, 1), is(70374));
+  }
+  
+  @Test
+  void testGetMostCals_Top3_testInput() {
+    assertThat(Day1.getMostCals(TEST_INPUT, 3), is(45000));
   }
 
   @Test
-  void testGetIncCount_puzzleInput() {
-    assertThat(Day1.getIncCount(PUZZLE_INPUT), is(1581));
-  }
-
-  @Test
-  void testGetIncWindowCount_testInput() {
-    assertThat(Day1.getIncWindowCount(TEST_INPUT), is(5));
-  }
-
-  @Test
-  void testGetIncWindowCount_puzzleInput() {
-    assertThat(Day1.getIncWindowCount(PUZZLE_INPUT), is(1618));
+  void testGetMostCals_Top3_puzzleInput() {
+    assertThat(Day1.getMostCals(PUZZLE_INPUT, 3), is(204610));
   }
 }
