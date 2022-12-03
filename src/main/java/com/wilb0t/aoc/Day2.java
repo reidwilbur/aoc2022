@@ -17,7 +17,6 @@ class Day2 {
       var theirs = left - 'A';
       var outcome = right - 'X' - 1;
       var mine = ((theirs + 3) + outcome) % 3;
-      
       return (mine + 1) + ((outcome + 1) * 3);
     }
     
