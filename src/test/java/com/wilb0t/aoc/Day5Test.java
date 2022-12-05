@@ -42,4 +42,14 @@ public class Day5Test {
   public void testRunProc_puzzleInput() {
     assertThat(Day5.runProc(PUZZLE_INPUT), is("RLFNRTNFB"));
   }
+
+  @Test
+  public void testRunProc9001_testInput() {
+    assertThat(Day5.runProc9001(TEST_INPUT), is("MCD"));
+  }
+
+  @Test
+  public void testRunProc9001_puzzleInput() {
+    assertThat(Day5.runProc9001(PUZZLE_INPUT), is("MHQTLJRLB"));
+  }
 }
