@@ -33,7 +33,7 @@ class Day5 {
         .collect(Collectors.joining(""));
   }
 
-  public static Pair<List<Deque<Character>>, List<Instr>> from(List<String> lines) {
+  public static Pair<List<Deque<Character>>, List<Instr>> parse(List<String> lines) {
     var blankIdx = lines.indexOf("");
     var stackNums = lines.get(blankIdx - 1).split("\s+");
     var numStacks = Integer.parseInt(stackNums[stackNums.length - 1]);

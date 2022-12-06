@@ -19,8 +19,8 @@ public class Day5Test {
   
   @BeforeEach
   public void beforeEach() {
-    PUZZLE_INPUT = Input.PUZZLE.parse(Day5::from);
-    TEST_INPUT = Input.TEST.parse(Day5::from);
+    PUZZLE_INPUT = Input.PUZZLE.parse(Day5::parse);
+    TEST_INPUT = Input.TEST.parse(Day5::parse);
   }
 
   @Test
