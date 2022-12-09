@@ -53,6 +53,7 @@
           <target>19</target>
           <release>19</release>
           <enablePreview>true</enablePreview>
+            <compilerArgs>--enable-preview</compilerArgs>
         </configuration>
       </plugin>
       <plugin>
